@@ -1,4 +1,4 @@
-package com.camp.bit.todolist.db;
+package com.byted.camp.todolist.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

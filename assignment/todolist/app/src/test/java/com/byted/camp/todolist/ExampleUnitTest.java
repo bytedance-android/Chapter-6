@@ -1,4 +1,4 @@
-package com.camp.bit.todolist;
+package com.byted.camp.todolist;
 
 import org.junit.Test;
 

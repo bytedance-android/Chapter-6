@@ -1,4 +1,4 @@
-package com.camp.bit.todolist.beans;
+package com.byted.camp.todolist.beans;
 
 /**
  * Created on 2019/1/23.

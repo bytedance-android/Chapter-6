@@ -1,6 +1,6 @@
-package com.camp.bit.todolist;
+package com.byted.camp.todolist;
 
-import com.camp.bit.todolist.beans.Note;
+import com.byted.camp.todolist.beans.Note;
 
 /**
  * Created on 2019/1/23.

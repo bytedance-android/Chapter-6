@@ -1,4 +1,4 @@
-package com.camp.bit.todolist.ui;
+package com.byted.camp.todolist.ui;
 
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -9,10 +9,10 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 
-import com.camp.bit.todolist.NoteOperator;
-import com.camp.bit.todolist.R;
-import com.camp.bit.todolist.beans.Note;
-import com.camp.bit.todolist.beans.State;
+import com.byted.camp.todolist.NoteOperator;
+import com.byted.camp.todolist.R;
+import com.byted.camp.todolist.beans.Note;
+import com.byted.camp.todolist.beans.State;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package com.camp.bit.todolist.debug;
+package com.byted.camp.todolist.debug;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.camp.bit.todolist.R;
+import com.byted.camp.todolist.R;
 
 import java.io.File;
 import java.io.IOException;

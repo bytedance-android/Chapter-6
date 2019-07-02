@@ -1,4 +1,4 @@
-package com.camp.bit.todolist;
+package com.byted.camp.todolist;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,9 +14,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.camp.bit.todolist.beans.Note;
-import com.camp.bit.todolist.debug.DebugActivity;
-import com.camp.bit.todolist.ui.NoteListAdapter;
+import com.byted.camp.todolist.beans.Note;
+import com.byted.camp.todolist.debug.DebugActivity;
+import com.byted.camp.todolist.ui.NoteListAdapter;
 
 import java.util.List;
 

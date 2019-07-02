@@ -1,4 +1,4 @@
-package com.camp.bit.todolist.db;
+package com.byted.camp.todolist.db;
 
 /**
  * Created on 2019/1/22.

@@ -1,4 +1,4 @@
-package com.camp.bit.todolist;
+package com.byted.camp.todolist;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.camp.bit.todolist", appContext.getPackageName());
+        assertEquals("com.byted.camp.todolist", appContext.getPackageName());
     }
 }
