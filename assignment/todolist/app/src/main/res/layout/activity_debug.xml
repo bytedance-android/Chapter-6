@@ -32,19 +32,6 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/request_storage_permission" />
 
-            <Button
-                android:id="@+id/btn_write_files"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/write_to_file" />
-
-            <TextView
-                android:id="@+id/text_files"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/write_to_file_hint" />
-
         </LinearLayout>
 
     </ScrollView>

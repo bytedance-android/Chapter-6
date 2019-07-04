@@ -15,4 +15,7 @@
     <!-- Note -->
     <string name="take_a_note">Take a note</string>
     <string name="confirm">Confirm</string>
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Normal</string>
+    <string name="priority_low">Low</string>
 </resources>

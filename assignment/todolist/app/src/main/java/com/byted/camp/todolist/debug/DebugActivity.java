@@ -58,16 +58,6 @@ public class DebugActivity extends AppCompatActivity {
                         REQUEST_CODE_STORAGE_PERMISSION);
             }
         });
-
-        final Button fileWriteBtn = findViewById(R.id.btn_write_files);
-        final TextView fileText = findViewById(R.id.text_files);
-        fileWriteBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO 把一段文本写入某个存储区的文件中，再读出来，显示在 fileText 上
-                fileText.setText("TODO");
-            }
-        });
     }
 
     @Override
