@@ -1,6 +1,7 @@
-package com.byted.camp.todolist.debug;
+package com.byted.camp.todolist.operation.activity;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
@@ -13,10 +14,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.byted.camp.todolist.R;
+import com.byted.camp.todolist.util.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public class DebugActivity extends AppCompatActivity {
@@ -65,7 +68,24 @@ public class DebugActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO 把一段文本写入某个存储区的文件中，再读出来，显示在 fileText 上
-                fileText.setText("TODO");
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        File dir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+                        File file = new File(dir, "test");
+                        FileUtils.writeContentToFile(file, "#title \ntest content.");
+                        final List<String> contents = FileUtils.readContentFromFile(file);
+                        DebugActivity.this.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                fileText.setText("");
+                                for (String content : contents) {
+                                    fileText.append(content + "\n");
+                                }
+                            }
+                        });
+                    }
+                }).start();
             }
         });
     }
@@ -90,6 +110,9 @@ public class DebugActivity extends AppCompatActivity {
     }
 
     private String getInternalPath() {
+//        Context context = this;
+//        context.getCacheDir();
+//        context.getFilesDir();
         Map<String, File> dirMap = new LinkedHashMap<>();
         dirMap.put("cacheDir", getCacheDir());
         dirMap.put("filesDir", getFilesDir());

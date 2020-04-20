@@ -15,7 +15,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.byted.camp.todolist.beans.Note;
-import com.byted.camp.todolist.debug.DebugActivity;
+import com.byted.camp.todolist.operation.activity.DatabaseActivity;
+import com.byted.camp.todolist.operation.activity.DebugActivity;
+import com.byted.camp.todolist.operation.activity.SettingActivity;
 import com.byted.camp.todolist.ui.NoteListAdapter;
 
 import java.util.List;
@@ -81,9 +83,13 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.action_settings:
+                startActivity(new Intent(this, SettingActivity.class));
                 return true;
             case R.id.action_debug:
                 startActivity(new Intent(this, DebugActivity.class));
+                return true;
+            case R.id.action_database:
+                startActivity(new Intent(this, DatabaseActivity.class));
                 return true;
             default:
                 break;
